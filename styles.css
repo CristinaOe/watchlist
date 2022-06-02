@@ -42,22 +42,28 @@ h4 a {
 
 .search-input {
   display: flex;
-  border: 1px solid blue;
 }
 
 .searchbar input[type="text"] {
+  border-top-right-radius: 1px;
+  border-bottom-right-radius: 1px;
   padding: 0.5em 10em;
   background-color: #fff;
+  text-align: left;
 }
 
 input[type="text"]::placeholder {
+  /* border: 1px solid red;
+  text-align: left; */
   display: flex;
-  border: 1px solid red;
-  align-self: flex-start;
+}
+
+.searchbar input[type="text"]:focus-visible,
+#input:focus-visible {
+  outline: 1px solid rgb(192, 189, 189);
 }
 
 .searchbar #search-btn {
-  margin-left: -66px;
   padding: 0.5em 1em;
   background-color: #f8f9fa;
   border-start-start-radius: 1px;
