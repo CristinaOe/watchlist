@@ -28,7 +28,7 @@ searchBtn.addEventListener("click", function (e) {
 function renderMovieList(movieList) {
   const searchResult = [];
   movieList.map((id) => {
-    fetch(`http://www.omdbapi.com/?i=${id}&apikey=c35d91f`)
+    fetch(`https://www.omdbapi.com/?i=${id}&apikey=c35d91f`)
       .then((res) => res.json())
       .then((data) => {
         searchResult.push(data);
