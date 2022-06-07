@@ -10,7 +10,7 @@ const formEl = document.getElementById("searchbar");
 searchBtn.addEventListener("click", function (e) {
   e.preventDefault();
 
-  fetch(`https://www.omdbapi.com/?s=${input.value}&apikey=c35d91f`)
+  fetch(`http://www.omdbapi.com/?s=${input.value}&apikey=c35d91f`)
     .then((res) => res.json())
     .then((data) => {
       const movieList = data.Search.map((item) => {
